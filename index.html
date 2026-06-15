@@ -44,6 +44,64 @@
             font-weight: 400;
         }
 
+        /* Enforce complete font family inheritance to override standard browser user-agent button blocks */
+        button, input, select, textarea, a {
+            font-family: 'Plus Jakarta Sans', sans-serif !important;
+        }
+
+        /* --- GLOBAL THEME CORE INTERACTIVE BUTTONS & CONTROLS --- */
+        .btn-filled {
+            background: var(--orange-accent);
+            color: var(--bg-dark);
+            padding: 14px 28px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            border: none;
+            transition: opacity 0.2s ease, transform 0.2s ease;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-filled:hover { 
+            opacity: 0.95; 
+            transform: translateY(-1px);
+        }
+
+        .btn-outlined {
+            border: 1px solid var(--border-gold);
+            color: var(--text-light);
+            padding: 14px 28px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            cursor: pointer;
+            background: transparent;
+            transition: background 0.2s ease, border-color 0.2s ease;
+            display: inline-block;
+            text-align: center;
+        }
+        .btn-outlined:hover { 
+            background: rgba(212, 163, 89, 0.06);
+            border-color: var(--gold-primary);
+        }
+
+        .header-action-btn {
+            background: var(--orange-accent);
+            color: var(--bg-dark);
+            padding: 10px 22px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: opacity 0.2s ease;
+            border: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .header-action-btn:hover { opacity: 0.9; }
+
         /* Fixed Navigation Header Architecture */
         header {
             position: fixed;
@@ -139,22 +197,6 @@
             background: rgba(212, 163, 89, 0.08);
         }
 
-        .header-action-btn {
-            background: var(--orange-accent);
-            color: var(--bg-dark);
-            padding: 8px 20px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: opacity 0.2s;
-            flex-shrink: 0;
-            border: none;
-            cursor: pointer;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .header-action-btn:hover { opacity: 0.9; }
-
         /* Unified View Wrapper Layout */
         .spa-view-wrapper {
             max-width: 1200px;
@@ -184,14 +226,14 @@
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.55; /* Optimized visibility curve scale so text pops over graphic background matrix */
+            opacity: 0.45; /* Clean visibility layer balance */
         }
 
         .hero-gradient-overlay {
             position: absolute;
             inset: 0;
             z-index: -9;
-            background: linear-gradient(to bottom, rgba(15, 8, 4, 0.3) 0%, rgba(15, 8, 4, 0.8) 60%, var(--bg-dark) 100%);
+            background: linear-gradient(to bottom, rgba(15, 8, 4, 0.4) 0%, rgba(15, 8, 4, 0.85) 70%, var(--bg-dark) 100%);
         }
 
         .hero-bounded-content {
@@ -241,35 +283,6 @@
             margin-bottom: 64px;
             flex-wrap: wrap;
         }
-
-        .btn-filled {
-            background: var(--orange-accent);
-            color: var(--bg-dark);
-            padding: 14px 28px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            cursor: pointer;
-            border: none;
-            transition: opacity 0.2s;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .btn-filled:hover { opacity: 0.9; }
-
-        .btn-outlined {
-            border: 1px solid var(--border-gold);
-            color: var(--text-light);
-            padding: 14px 28px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 0.9rem;
-            cursor: pointer;
-            background: transparent;
-            transition: background 0.2s;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .btn-outlined:hover { background: rgba(212, 163, 89, 0.05); }
 
         /* Bounded Metric Block Grids */
         .composite-grid-border {
@@ -369,6 +382,33 @@
             margin-bottom: 64px;
         }
 
+        @media (max-width: 968px) {
+            .split-column-flex-panel { grid-template-columns: 1fr; gap: 40px; }
+            .split-asset-frame { height: 360px; }
+            .technical-menu-grid { grid-template-columns: repeat(2, 1fr); }
+            .composite-grid-border { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            header { height: auto; padding: 12px 16px; }
+            .nav-container { flex-direction: column; justify-content: center; gap: 10px; }
+            .nav-links { justify-content: center; width: 100%; }
+            .nav-link { padding: 6px 10px; font-size: 0.78rem; }
+            .header-action-btn { display: none; }
+            .spa-view-wrapper { padding-top: 160px; }
+            .hero-banner-section { margin-top: -110px; }
+            .v-card-split { grid-template-columns: 1fr; gap: 24px; }
+            .v-card-img-holder { width: 170px; margin: 0 auto; }
+        }
+        @media (max-width: 600px) {
+            .technical-menu-grid { grid-template-columns: 1fr; }
+            .scope-mini-grid { grid-template-columns: 1fr; }
+            .mukhi-breakdown-matrix { grid-template-columns: 1fr; }
+            .composite-grid-border { grid-template-columns: 1fr; }
+            .section-title { font-size: 2.3rem; }
+            .footer-max-width { grid-template-columns: 1fr; gap: 32px; }
+            .hidden-qr-card-view { padding: 24px 20px; }
+        }
+
         .menu-card {
             border: 1px solid var(--border-gold);
             background: var(--bg-card);
@@ -461,7 +501,6 @@
         .signature-line-under { width: 110px; height: 1px; background: rgba(212, 163, 89, 0.4); margin-bottom: 6px; margin-left: auto; }
         .cert-error-banner { background: rgba(231, 76, 60, 0.06); border: 1px solid var(--error-red); padding: 24px; border-radius: 4px; text-align: left; }
         .cert-error-banner h3 { color: var(--error-red); margin-bottom: 8px; font-size: 1.3rem; }
-        /* --- END VERIFICATION LAB CARD STYLING --- */
 
         /* --- HIGH-END WHITE PARCHMENT CERTIFICATE VECTOR ENGINE (QR LINKS ONLY) --- */
         .hidden-qr-card-view {
@@ -540,8 +579,8 @@
         <div id="viewframe-home" class="spa-view-wrapper" style="display: block;">
             
             <section class="hero-banner-section">
-                <!-- Inline Styles Reinforced: Locks onto your local file asset with clear absolute cross-browser rendering directives -->
-                <div class="hero-background-media" style="background: url('sacred-malas-bg.jpg') center center / cover no-repeat !important;"></div>
+                <!-- Fixed: Locked onto a gorgeous, permanent, static architectural photo ID of sacred meditation elements that can never change -->
+                <div class="hero-background-media" style="background: url('https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=1600') center center / cover no-repeat !important;"></div>
                 <div class="hero-gradient-overlay"></div>
                 
                 <div class="hero-bounded-content">
@@ -942,7 +981,7 @@
                     </div>`;
             } 
             else if (idInt >= 15001 && idInt <= 20000) {
-                // MODEL 2: FIXED WHITE PARCHMENT TULSI MALA CARD (Locked onto a permanent, static cryptographic server layout asset that will NEVER shift)
+                // MODEL 2: FIXED WHITE PARCHMENT TULSI MALA CARD (Locked onto a permanent, archived server asset ID)
                 containerNode.innerHTML = `
                     <div class="hidden-qr-card-view">
                         <div class="v-card-top"><div><h2>Vedic Ratna Lab</h2><p>Authenticity Verification Certificate</p></div><div class="v-card-stamp-mark">VERIFIED</div></div>
@@ -962,7 +1001,7 @@
                     </div>`;
             } 
             else if (idInt >= 20001 && idInt <= 25000) {
-                // MODEL 3: WHITE PARCHMENT KARUNGALI MALA CARD
+                // MODEL 3: WHITE PARCHMENT KARUNGALI MALA WOOD CARD
                 containerNode.innerHTML = `
                     <div class="hidden-qr-card-view">
                         <div class="v-card-top"><div><h2>Vedic Ratna Lab</h2><p>Authenticity Verification Certificate</p></div><div class="v-card-stamp-mark">VERIFIED</div></div>
