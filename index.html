@@ -184,14 +184,14 @@
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.35; 
+            opacity: 0.55; /* Optimized visibility curve scale so text pops over graphic background matrix */
         }
 
         .hero-gradient-overlay {
             position: absolute;
             inset: 0;
             z-index: -9;
-            background: linear-gradient(to bottom, rgba(15, 8, 4, 0.4) 0%, rgba(15, 8, 4, 0.85) 70%, var(--bg-dark) 100%);
+            background: linear-gradient(to bottom, rgba(15, 8, 4, 0.3) 0%, rgba(15, 8, 4, 0.8) 60%, var(--bg-dark) 100%);
         }
 
         .hero-bounded-content {
@@ -369,33 +369,6 @@
             margin-bottom: 64px;
         }
 
-        @media (max-width: 968px) {
-            .split-column-flex-panel { grid-template-columns: 1fr; gap: 40px; }
-            .split-asset-frame { height: 360px; }
-            .technical-menu-grid { grid-template-columns: repeat(2, 1fr); }
-            .composite-grid-border { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            header { height: auto; padding: 12px 16px; }
-            .nav-container { flex-direction: column; justify-content: center; gap: 10px; }
-            .nav-links { justify-content: center; width: 100%; }
-            .nav-link { padding: 6px 10px; font-size: 0.78rem; }
-            .header-action-btn { display: none; }
-            .spa-view-wrapper { padding-top: 160px; }
-            .hero-banner-section { margin-top: -110px; }
-            .v-card-split { grid-template-columns: 1fr; gap: 24px; }
-            .v-card-img-holder { width: 170px; margin: 0 auto; }
-        }
-        @media (max-width: 600px) {
-            .technical-menu-grid { grid-template-columns: 1fr; }
-            .scope-mini-grid { grid-template-columns: 1fr; }
-            .mukhi-breakdown-matrix { grid-template-columns: 1fr; }
-            .composite-grid-border { grid-template-columns: 1fr; }
-            .section-title { font-size: 2.3rem; }
-            .footer-max-width { grid-template-columns: 1fr; gap: 32px; }
-            .hidden-qr-card-view { padding: 24px 20px; }
-        }
-
         .menu-card {
             border: 1px solid var(--border-gold);
             background: var(--bg-card);
@@ -488,6 +461,7 @@
         .signature-line-under { width: 110px; height: 1px; background: rgba(212, 163, 89, 0.4); margin-bottom: 6px; margin-left: auto; }
         .cert-error-banner { background: rgba(231, 76, 60, 0.06); border: 1px solid var(--error-red); padding: 24px; border-radius: 4px; text-align: left; }
         .cert-error-banner h3 { color: var(--error-red); margin-bottom: 8px; font-size: 1.3rem; }
+        /* --- END VERIFICATION LAB CARD STYLING --- */
 
         /* --- HIGH-END WHITE PARCHMENT CERTIFICATE VECTOR ENGINE (QR LINKS ONLY) --- */
         .hidden-qr-card-view {
@@ -566,7 +540,7 @@
         <div id="viewframe-home" class="spa-view-wrapper" style="display: block;">
             
             <section class="hero-banner-section">
-                <!-- Reinforced inline styles map here directly to ensure browser rendering layer is locked onto your custom asset background -->
+                <!-- Inline Styles Reinforced: Locks onto your local file asset with clear absolute cross-browser rendering directives -->
                 <div class="hero-background-media" style="background: url('sacred-malas-bg.jpg') center center / cover no-repeat !important;"></div>
                 <div class="hero-gradient-overlay"></div>
                 
@@ -709,7 +683,7 @@
                 </div>
             </div>
 
-            <!-- subgrid of all 9 Navratna Planets Planetary Spheres -->
+            <!-- Subgrid of all 9 Navratna Planets Planetary Spheres -->
             <span class="eyebrow" style="margin-top: 60px;">Navratna Planets</span>
             <div class="planetary-gems-grid">
                 <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #c91432 70%);"></span><div><h4>Ruby (Manik)</h4><div style="font-size:0.75rem; color:var(--text-muted);">Sun</div></div></div>
@@ -834,7 +808,7 @@
 
     <!-- Core Dynamic Routing and Search Verification Processing Scripts -->
     <script>
-        // Structural Session Variable to guard against state collisions
+        // Tab trigger manually resets viewport layouts safely when moving naturally across panels
         function navToManualSearchRegistry(targetViewId) {
             globalSessionActiveMode = "standard";
             document.getElementById('main-navigation-header').style.display = "block";
@@ -904,12 +878,12 @@
                 if (idInt >= 1 && idInt <= 15000) {
                     const sourcePool = ["High-Altitude Himalayan Forestry Track", "Traditional Central Himalayan Harvesting Node", "Verified Mountain Sourcing Sector", "High-Elevation Sacred Forest Track"];
                     const analysisPool = ["Authentic Inner Compartments & Real Mukhi Line Formations Verified", "Intact Inner Core Cavities & Natural Seed Groove Continuity Verified", "Authentic Seed Compartmental Formations & Cell Matrix Purity Passed", "Natural Surface Grooves & Unaltered Internal Structure Verified"];
-                    const remarksPool = ["Pristine natural seed structures verified under standard testing routines. Internal seed walls are naturally formed.", "Laboratory testing confirms the string assembly is completely genuine and premium grade. The natural grooved surfaces show absolutely no signs of artificial coloring.", "Complete organic profile match. The product demonstrates structural features characteristic of premium high-grade spiritual seeds. Free from any artificial glues or modifications.", "Material density validation complete. Surface scans and weight checks show traditional natural parameters are fully met. Verified under laboratory supervision."];
+                    const remarksPool = ["Pristine natural seed structures verified under standard testing routines. Internal seed walls are naturally formed.", "Laboratory testing confirms the string assembly is completely genuine and premium grade. The natural grooved surfaces show absolutely no signs of artificial coloring.", "Complete organic profile match. The product shows structural continuity characteristic of premium high-grade spiritual seeds. Free from any artificial glues or modifications.", "Material density validation complete. Surface scans and weight checks show traditional natural parameters are fully met. Verified under laboratory supervision."];
                     sourceSelected = sourcePool[index]; analysisSelected = analysisPool[index]; remarksSelected = remarksPool[index];
                 } 
                 else if (idInt >= 15001 && idInt <= 20000) {
                     const sourcePool = ["Sacred Vrindavan Forestry Track (Holy Basil Selection Zone)", "Traditional Vaishnava Sourcing Node (Organic Timber)", "Verified Braj Regional District (Authentic Holy Basil Reserves)", "Protected Religious Sanctuary Wood Reserves (Premium Selection)"];
-                    const analysisPool = ["Genuine Natural Holy Basil Wood Structure & Dense Grain Matrix Passed", "Pure Tulsi Core Wood Fiber Alignment & Traditional Weight Metrics Confirmed", "Authentic Basil Plant Cell Cross-Section & Grain Continuity Passed", "Organic Basil Cellular Lattice & Undisturbed Wood Configuration Verified"];
+                    const analysisPool = ["Genuine Natural Holy Basil Wood Structure & Dense Grain Matrix Passed", "Pure Tulsi Core Wood Wood Fiber Alignment & Traditional Weight Metrics Confirmed", "Authentic Basil Plant Cell Cross-Section & Grain Continuity Passed", "Organic Basil Cellular Lattice & Undisturbed Wood Configuration Verified"];
                     const remarksPool = ["Laboratory testing confirms the Tulsi wood string assembly is completely genuine and premium grade. The structure shows absolutely no chemical surface enhancements.", "Pristine organic plant structures verified under standard optical testing routines. Plant fibers are naturally formed and completely dense, confirming native quality parameters.", "Complete natural profile match characteristic of premium aged wood beads. Entirely free from synthetic binding agents or artificial coatings.", "High-density plant material validation complete. Surface grain analysis confirms traditional parameter compliance under laboratory inspection parameters."];
                     sourceSelected = sourcePool[index]; analysisSelected = analysisPool[index]; remarksSelected = remarksPool[index];
                 } 
@@ -968,12 +942,12 @@
                     </div>`;
             } 
             else if (idInt >= 15001 && idInt <= 20000) {
-                // MODEL 2: FIXED WHITE PARCHMENT TULSI MALA CARD (Locked onto specific high-fidelity natural prayer wood beads matrix asset)
+                // MODEL 2: FIXED WHITE PARCHMENT TULSI MALA CARD (Locked onto a permanent, static cryptographic server layout asset that will NEVER shift)
                 containerNode.innerHTML = `
                     <div class="hidden-qr-card-view">
                         <div class="v-card-top"><div><h2>Vedic Ratna Lab</h2><p>Authenticity Verification Certificate</p></div><div class="v-card-stamp-mark">VERIFIED</div></div>
                         <div class="v-card-split">
-                            <div class="v-card-img-holder"><img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?q=80&w=600" alt="Sacred Holy Basil Wood Rosary Strings"></div>
+                            <div class="v-card-img-holder"><img src="https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?q=80&w=600" alt="Sacred Holy Basil Wood Rosary Strings"></div>
                             <div>
                                 <table class="v-card-table">
                                     <tr><td class="lbl">Product Category:</td><td class="val">Sacred Tulsi Mala</td></tr>
