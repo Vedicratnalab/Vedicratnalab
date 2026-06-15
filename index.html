@@ -6,7 +6,7 @@
     <title>Vedic Ratna Lab — Authentic Stone & Rudraksha Testing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         /* Exact Theme Colors and Spacing Engine Mapping */
@@ -226,7 +226,7 @@
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            opacity: 0.45; /* Clean visibility layer balance */
+            opacity: 0.45; 
         }
 
         .hero-gradient-overlay {
@@ -380,33 +380,6 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 24px;
             margin-bottom: 64px;
-        }
-
-        @media (max-width: 968px) {
-            .split-column-flex-panel { grid-template-columns: 1fr; gap: 40px; }
-            .split-asset-frame { height: 360px; }
-            .technical-menu-grid { grid-template-columns: repeat(2, 1fr); }
-            .composite-grid-border { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            header { height: auto; padding: 12px 16px; }
-            .nav-container { flex-direction: column; justify-content: center; gap: 10px; }
-            .nav-links { justify-content: center; width: 100%; }
-            .nav-link { padding: 6px 10px; font-size: 0.78rem; }
-            .header-action-btn { display: none; }
-            .spa-view-wrapper { padding-top: 160px; }
-            .hero-banner-section { margin-top: -110px; }
-            .v-card-split { grid-template-columns: 1fr; gap: 24px; }
-            .v-card-img-holder { width: 170px; margin: 0 auto; }
-        }
-        @media (max-width: 600px) {
-            .technical-menu-grid { grid-template-columns: 1fr; }
-            .scope-mini-grid { grid-template-columns: 1fr; }
-            .mukhi-breakdown-matrix { grid-template-columns: 1fr; }
-            .composite-grid-border { grid-template-columns: 1fr; }
-            .section-title { font-size: 2.3rem; }
-            .footer-max-width { grid-template-columns: 1fr; gap: 32px; }
-            .hidden-qr-card-view { padding: 24px 20px; }
         }
 
         .menu-card {
@@ -579,8 +552,8 @@
         <div id="viewframe-home" class="spa-view-wrapper" style="display: block;">
             
             <section class="hero-banner-section">
-                <!-- Fixed: Locked onto a gorgeous, permanent, static architectural photo ID of sacred meditation elements that can never change -->
-                <div class="hero-background-media" style="background: url('https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=1600') center center / cover no-repeat !important;"></div>
+                <!-- Fixed: Pointed securely to your local GitHub file reference layout -->
+                <div class="hero-background-media" style="background: url('sacred-malas-bg.jpg') center center / cover no-repeat !important;"></div>
                 <div class="hero-gradient-overlay"></div>
                 
                 <div class="hero-bounded-content">
@@ -847,7 +820,9 @@
 
     <!-- Core Dynamic Routing and Search Verification Processing Scripts -->
     <script>
-        // Tab trigger manually resets viewport layouts safely when moving naturally across panels
+        let globalSessionActiveMode = "standard";
+
+        // Navigation tab trigger to manually reset layout variables when naturally jumping around tabs
         function navToManualSearchRegistry(targetViewId) {
             globalSessionActiveMode = "standard";
             document.getElementById('main-navigation-header').style.display = "block";
@@ -922,7 +897,7 @@
                 } 
                 else if (idInt >= 15001 && idInt <= 20000) {
                     const sourcePool = ["Sacred Vrindavan Forestry Track (Holy Basil Selection Zone)", "Traditional Vaishnava Sourcing Node (Organic Timber)", "Verified Braj Regional District (Authentic Holy Basil Reserves)", "Protected Religious Sanctuary Wood Reserves (Premium Selection)"];
-                    const analysisPool = ["Genuine Natural Holy Basil Wood Structure & Dense Grain Matrix Passed", "Pure Tulsi Core Wood Wood Fiber Alignment & Traditional Weight Metrics Confirmed", "Authentic Basil Plant Cell Cross-Section & Grain Continuity Passed", "Organic Basil Cellular Lattice & Undisturbed Wood Configuration Verified"];
+                    const analysisPool = ["Genuine Natural Holy Basil Wood Structure & Dense Grain Matrix Passed", "Pure Tulsi Core Wood Fiber Alignment & Traditional Weight Metrics Confirmed", "Authentic Basil Plant Cell Cross-Section & Grain Continuity Passed", "Organic Basil Cellular Lattice & Undisturbed Wood Configuration Verified"];
                     const remarksPool = ["Laboratory testing confirms the Tulsi wood string assembly is completely genuine and premium grade. The structure shows absolutely no chemical surface enhancements.", "Pristine organic plant structures verified under standard optical testing routines. Plant fibers are naturally formed and completely dense, confirming native quality parameters.", "Complete natural profile match characteristic of premium aged wood beads. Entirely free from synthetic binding agents or artificial coatings.", "High-density plant material validation complete. Surface grain analysis confirms traditional parameter compliance under laboratory inspection parameters."];
                     sourceSelected = sourcePool[index]; analysisSelected = analysisPool[index]; remarksSelected = remarksPool[index];
                 } 
@@ -981,12 +956,12 @@
                     </div>`;
             } 
             else if (idInt >= 15001 && idInt <= 20000) {
-                // MODEL 2: FIXED WHITE PARCHMENT TULSI MALA CARD (Locked onto a permanent, archived server asset ID)
+                // MODEL 2: FIXED WHITE PARCHMENT TULSI MALA CARD (Locked onto your local repository photo asset path)
                 containerNode.innerHTML = `
                     <div class="hidden-qr-card-view">
                         <div class="v-card-top"><div><h2>Vedic Ratna Lab</h2><p>Authenticity Verification Certificate</p></div><div class="v-card-stamp-mark">VERIFIED</div></div>
                         <div class="v-card-split">
-                            <div class="v-card-img-holder"><img src="https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?q=80&w=600" alt="Sacred Holy Basil Wood Rosary Strings"></div>
+                            <div class="v-card-img-holder"><img src="tulsi-mala.jpg" alt="Sacred Tulsi Wood Beads"></div>
                             <div>
                                 <table class="v-card-table">
                                     <tr><td class="lbl">Product Category:</td><td class="val">Sacred Tulsi Mala</td></tr>
