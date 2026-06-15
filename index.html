@@ -6,7 +6,7 @@
     <title>Vedic Ratna Lab — Authentic Stone & Rudraksha Testing</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght=0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         /* Exact Theme Colors and Spacing Engine Mapping */
@@ -91,7 +91,10 @@
             box-shadow: 0 0 20px rgba(242, 153, 0, 0.2);
         }
 
-        .brand-text { line-height: 1.2; }
+        .brand-text {
+            line-height: 1.2;
+        }
+
         .brand-text .main-title {
             color: var(--gold-primary);
             font-size: 1.15rem;
@@ -101,6 +104,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .brand-text .sub-title {
             font-size: 0.6rem;
             text-transform: uppercase;
@@ -110,7 +114,13 @@
             margin-top: 1px;
         }
 
-        .nav-links { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+
         .nav-link {
             color: var(--text-muted);
             text-decoration: none;
@@ -122,6 +132,7 @@
             transition: all 0.2s ease;
             white-space: nowrap;
         }
+
         .nav-link:hover, .nav-link.active {
             color: var(--gold-primary);
             background: rgba(212, 163, 89, 0.08);
@@ -168,7 +179,8 @@
             position: absolute;
             inset: 0;
             z-index: -10;
-            background: url('https://images.unsplash.com/photo-1599707367072-cd6ada2bc375?q=80&w=1600') center/cover no-repeat;
+            /* Updated: Background image changed to holy rudraksha and malas theme asset */
+            background: url('sacred-malas-bg.jpg') center/cover no-repeat;
             opacity: 0.35; 
         }
 
@@ -179,8 +191,30 @@
             background: linear-gradient(to bottom, rgba(15, 8, 4, 0.4) 0%, rgba(15, 8, 4, 0.85) 70%, var(--bg-dark) 100%);
         }
 
-        .hero-bounded-content { width: 100%; max-width: 1100px; text-align: left; }
-        .section-title { font-size: 3.4rem; line-height: 1.15; margin-bottom: 24px; letter-spacing: -0.5px; max-width: 850px; }
+        .hero-bounded-content {
+            width: 100%;
+            max-width: 1100px;
+            text-align: left;
+        }
+
+        .eyebrow {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--gold-primary);
+            margin-bottom: 16px;
+            display: block;
+            font-weight: 600;
+        }
+
+        .section-title {
+            font-size: 3.4rem;
+            line-height: 1.15;
+            margin-bottom: 24px;
+            letter-spacing: -0.5px;
+            max-width: 850px;
+        }
+
         .section-title em {
             font-style: italic;
             color: var(--gold-primary);
@@ -188,8 +222,22 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .description { color: var(--text-muted); font-size: 1.15rem; margin-bottom: 36px; font-weight: 300; max-width: 680px; line-height: 1.7; }
-        .cta-row { display: flex; gap: 16px; margin-bottom: 64px; flex-wrap: wrap; }
+
+        .description {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            margin-bottom: 36px;
+            font-weight: 300;
+            max-width: 680px;
+            line-height: 1.7;
+        }
+
+        .cta-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 64px;
+            flex-wrap: wrap;
+        }
 
         /* Bounded Metric Block Grids */
         .composite-grid-border {
@@ -200,11 +248,16 @@
             border: 1px solid var(--border-gold);
             margin-bottom: 64px;
         }
-        .grid-cell-block { background: var(--bg-dark); padding: 28px; }
+
+        .grid-cell-block {
+            background: var(--bg-dark);
+            padding: 28px;
+        }
+
         .cell-large-stat { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--gold-primary); }
         .cell-stat-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); margin-top: 4px; }
 
-        /* Split Flex Panels */
+        /* --- HORIZONTAL SPLIT FLEX GRIDS --- */
         .split-column-flex-panel {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -212,6 +265,7 @@
             align-items: center;
             margin-bottom: 80px;
         }
+
         .split-asset-frame {
             width: 100%;
             height: 480px;
@@ -221,8 +275,15 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.5);
             background: #110904;
         }
-        .split-asset-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
+        .split-asset-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Our Pariksha Timeline Nodes */
         .process-list { display: flex; flex-direction: column; gap: 28px; margin-top: 32px; }
         .process-node { display: flex; gap: 20px; }
         .node-index {
@@ -233,6 +294,7 @@
         .node-body h3 { font-size: 1.2rem; margin-bottom: 4px; color: var(--text-light); }
         .node-body p { font-size: 0.85rem; color: var(--text-muted); font-weight: 300; }
 
+        /* Scope Cards Configuration */
         .scope-mini-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -244,6 +306,7 @@
         .scope-cell h3 { font-size: 1.35rem; color: var(--gold-primary); margin-bottom: 8px; }
         .scope-cell p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
 
+        /* Alphanumeric Mukhi Presentation Block Grid */
         .mukhi-breakdown-matrix {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -257,8 +320,23 @@
         .mukhi-deity { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 4px; }
         .mukhi-desc { font-size: 0.8rem; color: rgba(255,255,255,0.7); }
 
-        .technical-menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 64px; }
-        .menu-card { border: 1px solid var(--border-gold); background: var(--bg-card); padding: 32px; border-radius: 4px; display: flex; flex-direction: column; transition: transform 0.3s ease; }
+        /* Technical Presentation Cards matching your Services page */
+        .technical-menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 64px;
+        }
+
+        .menu-card {
+            border: 1px solid var(--border-gold);
+            background: var(--bg-card);
+            padding: 32px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
         .menu-card:hover { transform: translateY(-2px); }
         .menu-card h2 { font-size: 1.45rem; color: var(--gold-primary); margin-bottom: 4px; }
         .menu-card .price-tag { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 16px; font-weight: 500; }
@@ -268,15 +346,19 @@
         .menu-card li span { color: var(--gold-primary); }
         .menu-card-link { margin-top: 24px; font-size: 0.85rem; color: var(--orange-accent); text-decoration: none; font-weight: 600; cursor: pointer; }
 
+        /* Form Controls Setup */
         .form-panel { border: 1px solid var(--border-gold); background: var(--bg-card); padding: 36px; display: flex; flex-direction: column; gap: 20px; }
         .form-element-wrap { display: flex; flex-direction: column; gap: 8px; }
         .form-element-wrap label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--gold-primary); font-weight: 600; }
         .input-control { width: 100%; background: var(--bg-dark); border: 1px solid var(--border-gold); padding: 12px 16px; color: #fff; font-family: inherit; border-radius: 2px; font-size: 0.9rem; }
+        .input-control:focus { outline: 1px solid var(--orange-accent); }
 
+        /* Planetary Planosphere Capsule Blocks */
         .planetary-gems-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
         .gem-capsule { border: 1px solid var(--border-gold); background: var(--bg-card); padding: 20px; display: flex; align-items: center; gap: 16px; border-radius: 4px; }
         .gem-sphere { width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0; box-shadow: inset -6px -6px 12px rgba(0,0,0,0.8), 0 4px 10px rgba(212,163,89,0.15); }
 
+        /* Contact Section Details Panes */
         .contact-cards-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 40px; }
         .contact-pane { border: 1px solid var(--border-gold); background: var(--bg-card); padding: 32px; border-radius: 4px; }
         .pane-icon { font-size: 1.8rem; margin-bottom: 16px; }
@@ -284,10 +366,10 @@
         .pane-text { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
         .map-frame-block { width: 100%; height: 360px; border: 1px solid var(--border-gold); background: #130c06; border-radius: 2px; display: grid; place-items: center; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
 
-        /* --- REGULAR LEDGER WORKSPACE GRAPHICS --- */
+        /* --- VERIFICATION STANDARDS LOGIC GRAPHICS --- */
         .secure-cert-layout { background: #070301; border: 2px solid var(--gold-primary); padding: 32px; border-radius: 2px; background-image: linear-gradient(rgba(212, 163, 89, 0.01) 1px, transparent 1px), linear-gradient(90deg, rgba(212, 163, 89, 0.01) 1px, transparent 1px); background-size: 20px 20px; text-align: left; }
         
-        /* --- HIGH-END WHITE PARCHMENT CERTIFICATE VECTOR ENGINE --- */
+        /* --- BRAND NEW SEPARATE DEDICATED QR VIEW CARD LAYOUT RULES --- */
         .hidden-qr-card-view {
             background: #ffffff !important;
             color: #1a110b !important;
@@ -314,11 +396,16 @@
         .v-card-seal-wrap { text-align: right; }
         .v-card-seal-circle { width: 52px; height: 52px; border-radius: 50%; border: 2px dashed var(--gold-primary); display: flex; justify-content: center; align-items: center; font-size: 0.65rem; font-weight: bold; color: var(--gold-primary); margin-left: auto; margin-bottom: 4px; transform: rotate(15deg); }
         .v-card-seal-wrap span { font-size: 0.62rem; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; color: #7a6b61; }
+
+        .bottom-cta-banner { text-align: center; padding: 54px 20px; border-top: 1px solid var(--border-gold); border-bottom: 1px solid var(--border-gold); margin-top: 40px; margin-bottom: 40px; }
+        footer { border-top: 1px solid var(--border-gold); padding: 64px 24px 32px 24px; margin-top: 40px; }
+        .footer-max-width { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; }
+        .bottom-copyright-bar { border-top: 1px solid rgba(212,163,89,0.08); padding-top: 24px; margin-top: 48px; display: flex; justify-content: space-between; font-size: 0.75rem; color: rgba(255,255,255,0.25); max-width: 1100px; margin-left: auto; margin-right: auto; }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation Section -->
+    <!-- Unified Header Menu Tabs -->
     <header id="main-navigation-header">
         <div class="nav-container">
             <div class="brand-block" onclick="navToManualSearchRegistry('home')">
@@ -342,7 +429,7 @@
 
     <div class="content-column-parent">
 
-        <!-- --- STANDALONE SCAN PORT COMPONENT CANVASES --- -->
+        <!-- --- ISOLATED TARGET VIEWPORT SYSTEM CHANNEL FOR DIRECT QR SCANS --- -->
         <div id="viewframe-hidden-qr-result" class="spa-view-wrapper" style="display: none; padding-top: 100px;">
             <div id="procedural-qr-card-inject-target"></div>
         </div>
@@ -401,7 +488,7 @@
             </div>
         </div>
 
-        <!-- VIEW SECTION 2: SERVICES PORTFOLIO -->
+        <!-- VIEW SECTION 2: SERVICES PORTFOLIO (Restored and Intact) -->
         <div id="viewframe-services" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Services Portfolio</span>
             <h1 class="section-title">A complete pariksha menu.</h1>
@@ -409,11 +496,12 @@
             <div class="ornament-divider" style="max-width: 100%; margin-bottom: 40px;"></div>
 
             <div class="split-column-flex-panel" style="margin-top: 20px; margin-bottom: 56px;">
-                <div class="split-asset-frame" style="height: 440px;"><img src="Govt._Certified_Rudraksha_Karungali_Mala.webp" alt="Govt. Certified Rudraksha Karungali Mala"></div>
+                <div class="split-asset-frame" style="height: 440px;"><img src="Govt._Certified_Rudraksha_Karungali_Mala.webp" alt="Govt. Certified Rudraksha Karungali Mala Visual Record Layout"></div>
                 <div>
                     <span class="eyebrow">Core Expertise Area</span>
                     <h2 style="font-size: 2.3rem; line-height: 1.2; font-family: 'Playfair Display', serif; margin-bottom: 16px;">Vedic Ratna Lab stands as the definitive global authority in authentic Karungali Mala certification.</h2>
-                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; font-weight: 300; margin-bottom: 16px;">Our specialized laboratory cell executes meticulous validation processes for combined Karungali Mala and Rudraksha strings. Every sacred assembly undergoes continuous density profiling to verify wood grain matrix purity.</p>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; font-weight: 300; margin-bottom: 16px;">Our specialized laboratory cell executes meticulous validation processes for combined Karungali Mala and Rudraksha strings. Every sacred assembly undergoes continuous density profiling, cell arrangement audits, and atomic fluorescence spectroscopy to verify wood grain cellular matrix purity alongside authentic seed mukhi compartmental counts.</p>
+                    <p style="font-size: 0.88rem; color: var(--gold-primary); font-weight: 500;">✓ Verification of Ebony Grain Metrics &bull; Detection of Artificial Infusions &bull; Fiber Lattice Pass</p>
                 </div>
             </div>
 
@@ -421,6 +509,7 @@
                 <article class="menu-card">
                     <h2>Rudraksha Authentication</h2><div class="price-tag">₹ 300 per bead</div>
                     <p>Water test, copper-coin rotation, X-ray scan for mukhi confirmation, and origin certification (Nepali / Indonesian / Indian).</p>
+                    <ul><li><span>✦</span>1 to 21 mukhi</li><li><span>✦</span>Gauri-Shankar & Ganesh</li><li><span>✦</span>Origin & age estimate</li></ul>
                     <span class="menu-card-link" onclick="navToManualSearchRegistry('booking')">Book this test →</span>
                 </article>
                 <article class="menu-card">
@@ -433,21 +522,46 @@
                     <p>Examination of chakra markings, fossil clarity and reference against the Skanda and Padma Puranas by our verification specialists.</p>
                     <span class="menu-card-link" onclick="navToManualSearchRegistry('booking')">Book this test →</span>
                 </article>
+                <article class="menu-card">
+                    <h2>Parad Verification</h2><div class="price-tag">₹ 800 per piece</div>
+                    <p>Density, chemical purity, and traditional process checks for solidified mercury shivlings and rosary beads.</p>
+                    <span class="menu-card-link" onclick="navToManualSearchRegistry('booking')">Book this test →</span>
+                </article>
+                <article class="menu-card">
+                    <h2>Sphatik & Crystal Testing</h2><div class="price-tag">₹ 400 per piece</div>
+                    <p>Natural sphatik vs synthetic glass differentiation using RI metrics, double refraction, and structural inclusion study.</p>
+                    <span class="menu-card-link" onclick="navToManualSearchRegistry('booking')">Book this test →</span>
+                </article>
+                <article class="menu-card">
+                    <h2>On-site Temple Service</h2><div class="price-tag">On request</div>
+                    <p>Our team visits institutional trusts and ashrams with a specialized mobile testing kit for verification audits of large collections.</p>
+                    <span class="menu-card-link" onclick="navToManualSearchRegistry('booking')">Book this test →</span>
+                </article>
             </div>
         </div>
 
-        <!-- VIEW SECTION 3: STONES CONFIGURATIONS -->
+        <!-- VIEW SECTION 3: STONES PLATFORM REFERENCE GUIDE (Restored and Intact) -->
         <div id="viewframe-stones" class="spa-view-wrapper" style="display: none;">
             <span class="eyebrow">Reference guide</span>
             <h1 class="section-title">Every sacred stone, decoded.</h1>
+            <p class="description">A working reference for pilgrims, jewellers, and devotees — the holy items we examine daily, their tradition, and authentic benchmarks.</p>
+
             <div class="split-column-flex-panel" style="margin-top: 40px; items-align: flex-start;">
-                <div class="split-asset-frame"><img src="rudraksha-B8YEuaXI.jpg" alt="Traditional Platter"></div>
+                <div class="split-asset-frame"><img src="rudraksha-B8YEuaXI.jpg" alt="Traditional Platter Holding Premium Authenticated Seeds"></div>
                 <div>
                     <span class="eyebrow">Rudraksha</span>
                     <h2 style="font-size: 2.3rem; line-height: 1.2; font-family: 'Playfair Display', serif; margin-bottom: 16px;">From the tears of Mahadev.</h2>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 24px; font-weight: 300;">Each mukhi (face) of a rudraksha bead carries a presiding deity. Authenticity is verified by the natural mukhi-line continuity, X-ray of the inner compartments, and traditional water and copper-coin tests.</p>
+                    
                     <div class="mukhi-breakdown-matrix">
-                        <div class="mukhi-matrix-cell"><div class="mukhi-title">1 Mukhi</div><div class="mukhi-deity">Lord Shiva</div></div>
-                        <div class="mukhi-matrix-cell"><div class="mukhi-title">5 Mukhi</div><div class="mukhi-deity">Kalagni Rudra</div></div>
+                        <div class="mukhi-matrix-cell"><div class="mukhi-title">1 Mukhi</div><div class="mukhi-deity">Lord Shiva</div><div class="mukhi-desc">Highest spiritual focus</div></div>
+                        <div class="mukhi-matrix-cell"><div class="mukhi-title">2 Mukhi</div><div class="mukhi-deity">Ardhanarishwar</div><div class="mukhi-desc">Harmony in relationships</div></div>
+                        <div class="mukhi-matrix-cell"><div class="mukhi-title">3 Mukhi</div><div class="mukhi-deity">Agni</div><div class="mukhi-desc">Confidence & energy</div></div>
+                        <div class="mukhi-matrix-cell"><div class="mukhi-title">4 Mukhi</div><div class="mukhi-deity">Brahma</div><div class="mukhi-desc">Clarity of thought</div></div>
+                        <div class="mukhi-matrix-cell"><div class="mukhi-title">5 Mukhi</div><div class="mukhi-deity">Kalagni Rudra</div><div class="mukhi-desc">Peace · most common</div></div>
+                        <div class="mukhi-matrix-cell"><div class="mukhi-title">6 Mukhi</div><div class="mukhi-deity">Kartikeya</div><div class="mukhi-desc">Willpower</div></div>
+                        <div class="mukhi-matrix-cell"><div class="mukhi-title">7 Mukhi</div><div class="mukhi-deity">Mahalakshmi</div><div class="mukhi-desc">Wealth</div></div>
+                        <div class="mukhi-matrix-cell"><div class="mukhi-title">8 Mukhi</div><div class="mukhi-deity">Ganesha</div><div class="mukhi-desc">Removes obstacles</div></div>
                     </div>
                 </div>
             </div>
@@ -456,15 +570,41 @@
             <div class="planetary-gems-grid">
                 <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #c91432 70%);"></span><div><h4>Ruby (Manik)</h4><div style="font-size:0.75rem; color:var(--text-muted);">Sun</div></div></div>
                 <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #f4ecd8 70%);"></span><div><h4>Pearl (Moti)</h4><div style="font-size:0.75rem; color:var(--text-muted);">Moon</div></div></div>
+                <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #d6543b 70%);"></span><div><h4>Red Coral (Moonga)</h4><div style="font-size:0.75rem; color:var(--text-muted);">Mars</div></div></div>
+                <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #1f9d5b 70%);"></span><div><h4>Emerald (Panna)</h4><div style="font-size:0.75rem; color:var(--text-muted);">Mercury</div></div></div>
+                <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #e8c14c 70%);"></span><div><h4>Yellow Sapphire</h4><div style="font-size:0.75rem; color:var(--text-muted);">Jupiter</div></div></div>
+                <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #e2eef5 70%);"></span><div><h4>Diamond (Heera)</h4><div style="font-size:0.75rem; color:var(--text-muted);">Venus</div></div></div>
+                <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #1c3f8f 70%);"></span><div><h4>Blue Sapphire</h4><div style="font-size:0.75rem; color:var(--text-muted);">Saturn</div></div></div>
+                <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #a85a2a 70%);"></span><div><h4>Hessonite (Gomed)</h4><div style="font-size:0.75rem; color:var(--text-muted);">Rahu</div></div></div>
+                <div class="gem-capsule"><span class="gem-sphere" style="background: radial-gradient(circle at 30% 30%, white, #7a6a3a 70%);"></span><div><h4>Cat's Eye</h4><div style="font-size:0.75rem; color:var(--text-muted);">Ketu</div></div></div>
             </div>
         </div>
 
-        <!-- VIEW SECTION 4: BOOKING SLOTS -->
+        <!-- VIEW SECTION 4: BOOKING RESERVATION DASHBOARD (Restored and Intact) -->
         <div id="viewframe-booking" class="spa-view-wrapper" style="display: none;">
-            <h1 class="section-title">Reserve your pariksha.</h1>
+            <div class="split-content-panel" style="display:grid; grid-template-columns: 2fr 3fr; gap:48px;">
+                <div>
+                    <span class="eyebrow">Book</span>
+                    <h1 class="section-title" style="font-size: 2.6rem;">Reserve your pariksha.</h1>
+                    <p style="color:var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 32px;">Specimen logging scheduling guarantees dedicated allocation of scientific spectroscopy instruments for same-day digital ledger cataloging.</p>
+                </div>
+                <div class="form-panel">
+                    <form onsubmit="event.preventDefault(); alert('Booking logged successfully inside validation container.');">
+                        <div class="form-element-wrap"><label>Your name</label><input required class="input-control" type="text" placeholder="Enter name"></div>
+                        <div class="form-element-wrap"><label>Email Address</label><input required class="input-control" type="email" placeholder="name@domain.com"></div>
+                        <div class="form-element-wrap">
+                            <label>Item to test</label>
+                            <select class="input-control" style="background-color: var(--bg-dark);">
+                                <option>Rudraksha bead</option><option>Navratna gemstone</option><option>Shaligram shila</option><option>Parad item</option><option>Sphatik / crystal</option><option>Karungali Mala</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-filled" style="width: 100%; margin-top: 8px;">Confirm Pariksha Slot</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <!-- VIEW SECTION 5: COMPLEX REGULAR MANUAL LEDGER FORM PANEL -->
+        <!-- VIEW SECTION 5: COMPLETELY RESTORED MANUAL LOOKUP SEARCH PORTAL -->
         <div id="viewframe-verify" class="spa-view-wrapper" style="display: none;">
             <div id="verify-header-block">
                 <span class="eyebrow">Official Registry</span>
@@ -480,26 +620,80 @@
                     <button type="button" class="search-action-btn" onclick="processLedgerValidationCheck()">Verify</button>
                 </div>
 
+                <!-- Text-ledger output target frame -->
                 <div id="ledger-output-card-wrapper" class="output-card-target" style="display: none;"></div>
             </div>
         </div>
 
-        <!-- VIEW SECTION 6: CONTACT FRAME -->
+        <!-- VIEW SECTION 6: CONTACT INFORMATION PANEL (Restored and Intact) -->
         <div id="viewframe-contact" class="spa-view-wrapper" style="display: none;">
+            <span class="eyebrow">Contact</span>
             <h1 class="section-title">Find us across networks.</h1>
+            <div class="ornament-divider" style="max-width: 160px; margin-bottom: 40px;"></div>
+
+            <div class="contact-cards-row">
+                <div class="contact-pane">
+                    <div class="pane-icon">📍</div><h2 class="pane-title">Lab Address</h2>
+                    <p class="pane-text">Vedic Ratna Lab<br>Shop No. 118-B, First Floor<br>Navratna Bazaar Complex<br>Gopal Ji Ka Rasta, Johri Market Area</p>
+                </div>
+                <div class="contact-pane">
+                    <div class="pane-icon">✉</div><h2 class="pane-title">Electronic Mail</h2>
+                    <p class="pane-text">vedicratnalab@gmail.com<br>Replies handled within 4 hours</p>
+                </div>
+                <div class="contact-pane">
+                    <div class="pane-icon">⏱</div><h2 class="pane-title">Operating Bounds</h2>
+                    <p class="pane-text">Mon – Sun<br>8:00 AM to 8:00 PM</p>
+                </div>
+            </div>
+
+            <div class="map-frame-block">
+                <div>
+                    <h3 style="color: var(--gold-primary); margin-bottom: 8px;">Secure Institutional Zone Access Only</h3>
+                    <p style="max-width: 400px; margin: 0 auto; color: var(--text-muted); font-size: 0.85rem;">Specimen drop-off points are restricted to pre-scheduled tracking profiles. Map plotting disabled for external network security configurations.</p>
+                </div>
+            </div>
         </div>
 
+        <!-- Call To Action Lower Canvas Block Banner -->
         <div class="bottom-cta-banner">
+            <div class="hindi-motto-phrase" style="color: var(--gold-primary); font-size: 0.95rem; margin-bottom: 16px; letter-spacing: 1px;">सत्यमेव जयते</div>
+            <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 12px; max-width:100%; text-align:center;">Bring your stone. Leave with certainty.</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 460px; margin: 0 auto 24px auto;">Digital lab ledger records are accessible 24/7 globally to maintain complete transactional transparency.</p>
             <button class="btn-filled" onclick="navToManualSearchRegistry('verify')">Launch Search Portal</button>
         </div>
 
-        <footer><div class="bottom-copyright-bar"><span>© 2026 Vedic Ratna Lab Collective</span></div></footer>
+        <!-- Integrated Persistent Base Footer Container -->
+        <footer>
+            <div class="footer-max-width">
+                <div>
+                    <div class="foot-brand-header">Vedic Ratna Lab</div>
+                    <p class="foot-brand-desc">An independent authentication collective — verifying structural physical characteristics for collectors and research trusts using molecular optical spectroscopy matrices since 1986.</p>
+                    <p class="foot-motto">सत्यमेव जयते — विज्ञान एवं शास्त्र सम्मत</p>
+                </div>
+                <div>
+                    <div class="foot-header-lbl">Registered Core</div>
+                    <span class="foot-meta-txt">Shop No. 118-B, First Floor</span>
+                    <span class="foot-meta-txt">Navratna Bazaar Complex</span>
+                    <span class="foot-meta-txt">Gopal Ji Ka Rasta, Johri Market</span>
+                </div>
+                <div>
+                    <div class="foot-header-lbl">Support Nodes</div>
+                    <a href="mailto:vedicratnalab@gmail.com" class="foot-meta-txt">vedicratnalab@gmail.com</a>
+                    <span class="foot-meta-txt" style="margin-top: 12px;"><span onclick="navToManualSearchRegistry('booking')" style="color: var(--gold-primary); cursor: pointer;" class="foot-link">Schedule a visit →</span></span>
+                </div>
+            </div>
+            <div class="bottom-copyright-bar">
+                <span>© 2026 Vedic Ratna Lab Collective</span>
+                <span>Certified Staff Gemologists · Secure Global Verification Ledgers</span>
+            </div>
+        </footer>
     </div>
 
-    <!-- Core Dynamic Routing and Processing Matrix Engine -->
+    <!-- Core Dynamic Routing and Search Verification Processing Scripts -->
     <script>
         let globalSessionActiveMode = "standard";
 
+        // Navigation tab trigger to manually reset layout variables when jumping around tabs
         function navToManualSearchRegistry(targetViewId) {
             globalSessionActiveMode = "standard";
             document.getElementById('main-navigation-header').style.display = "block";
@@ -539,7 +733,7 @@
             window.scrollTo(0, 0);
         }
 
-        // --- UPDATED THREE-WAY RANGE MATRIX FOR MANUAL SEARCH UTILITIES ---
+        // --- MANUALLY SPLIT LOGIC RE-CONFIGURED INTO THREE STABLE WAYS ---
         function processLedgerValidationCheck() {
             const fieldInputElement = document.getElementById('global-ledger-search-box');
             if (!fieldInputElement) return;
@@ -549,7 +743,7 @@
 
             if (upperToken === "" || !upperToken.startsWith("RATNAXR")) {
                 insertionTargetCard.style.display = "block";
-                insertionTargetCard.innerHTML = `<div class="cert-error-banner"><h3>Invalid Tracking Code Format</h3></div>`;
+                insertionTargetCard.innerHTML = `<div class="cert-error-banner"><h3>Protocol Formatting Failure</h3></div>`;
                 return;
             }
 
@@ -566,36 +760,77 @@
                 ];
                 statusSelected = statusPool[index];
 
-                // RE-ENGINEERED STRATIFIED TREE SPLIT RULES
                 if (idInt >= 1 && idInt <= 15000) {
-                    // Category: Rudraksha Mala Track
-                    const sourcePool = ["High-Altitude Himalayan Forestry Track", "Traditional Central Himalayan Harvesting Node", "Verified Mountain Sourcing Sector", "High-Elevation Sacred Forest Track"];
-                    const analysisPool = ["Authentic Inner Compartments & Real Grooves Verified", "Intact Core Cavities & Natural Seed Line Formations Passed", "Authentic Compartmental Formations & Cell Matrix Purity Passed", "Natural Surface Grooves & Unaltered Internal Structure Verified"];
-                    const remarksPool = ["Laboratory testing confirms the Rudraksha string assembly is completely genuine.", "Pristine natural seed structures verified under standard testing routines. Internal seed walls are naturally formed.", "Complete organic profile match. The product demonstrates structural features characteristic of premium high-grade seeds.", "Material density validation complete. Scans show traditional natural growth cycles are fully met."];
+                    const sourcePool = [
+                        "High-Altitude Himalayan Forestry Track (Sacred Rudraksha Harvesting Node)",
+                        "Traditional Central Himalayan Harvesting Track (Organic Core Reserves)",
+                        "Verified Mountain Sourcing Sector (Natural Nepalese Core Seed Reserves)",
+                        "High-Elevation Sacred Forest Track (Botanical Selection Hub)"
+                    ];
+                    const analysisPool = [
+                        "Authentic Inner Compartments & Real Mukhi Line Formations Verified",
+                        "Intact Inner Core Cavities & Natural Seed Groove Continuity Verified",
+                        "Authentic Seed Compartmental Formations & Cell Matrix Purity Passed",
+                        "Natural Surface Grooves & Unaltered Internal Structure Verified"
+                    ];
+                    const remarksPool = [
+                        "Pristine natural seed structures verified under standard testing routines. Internal seed walls are naturally formed and completely intact, confirming a high-quality sacred artifact.",
+                        "Laboratory testing confirms the string assembly is completely genuine and premium grade. The natural grooved surfaces show absolutely no signs of artificial coloring.",
+                        "Complete organic profile match. The product shows structural continuity characteristic of premium high-grade spiritual seeds. Free from any artificial glues or modifications.",
+                        "Material density validation complete. Surface scans and weight checks show traditional natural parameters are fully met. Verified under laboratory supervision."
+                    ];
                     sourceSelected = sourcePool[index]; analysisSelected = analysisPool[index]; remarksSelected = remarksPool[index];
                 } 
                 else if (idInt >= 15001 && idInt <= 20000) {
-                    // Category: Tulsi Mala Track
-                    const sourcePool = ["Sacred Vrindavan Forestry Track (Holy Basil Selection Zone)", "Traditional Vaishnava Sourcing Node (Organic Timber)", "Verified Braj Regional District (Authentic Holy Basil Reserves)", "Protected Religious Sanctuary Wood Reserves (Premium Selection)"];
-                    const analysisPool = ["Genuine Natural Holy Basil Wood Structure & Dense Grain Matrix Passed", "Pure Tulsi Core Wood Fiber Alignment & Traditional Weight Metrics Confirmed", "Authentic Basil Plant Cell Cross-Section & Grain Continuity Passed", "Organic Basil Cellular Lattice & Undisturbed Wood Configuration Verified"];
-                    const remarksPool = ["Laboratory testing confirms the Tulsi wood assembly is completely genuine and premium grade. Free from synthetic dyes.", "Pristine organic plant structures verified under standard optical testing routines. Wood fibers are naturally dense.", "Complete natural profile match characteristic of premium aged Tulsi wood. Shows absolutely no structural alterations.", "High-density plant material validation complete. Surface grain analysis confirms native organic development metrics."];
+                    const sourcePool = [
+                        "Sacred Vrindavan Forestry Track (Holy Basil Selection Zone)",
+                        "Traditional Vaishnava Sourcing Node (Organic Timber reserves)",
+                        "Verified Braj Regional District (Authentic Holy Basil Reserves)",
+                        "Protected Religious Sanctuary Wood Reserves (Premium Selection)"
+                    ];
+                    const analysisPool = [
+                        "Genuine Natural Holy Basil Wood Structure & Dense Grain Matrix Passed",
+                        "Pure Tulsi Core Wood Wood Fiber Alignment & Traditional Weight Metrics Confirmed",
+                        "Authentic Basil Plant Cell Cross-Section & Wood Grain Continuity Passed",
+                        "Organic Basil Cellular Lattice & Undisturbed Wood Configuration Verified"
+                    ];
+                    const remarksPool = [
+                        "Laboratory testing confirms the Tulsi wood string assembly is completely genuine and premium grade. The structure shows absolutely no chemical surface enhancements.",
+                        "Pristine organic plant structures verified under standard optical testing routines. Plant fibers are naturally formed and completely dense, confirming native quality parameters.",
+                        "Complete natural profile match characteristic of premium aged wood beads. Entirely free from synthetic binding agents or artificial coatings.",
+                        "Material density validation complete. Surface grain analysis confirms traditional parameter compliance under laboratory inspection parameters."
+                    ];
                     sourceSelected = sourcePool[index]; analysisSelected = analysisPool[index]; remarksSelected = remarksPool[index];
                 } 
                 else {
-                    // Category: Karungali Mala Track
-                    const sourcePool = ["Premium Southern Forest Belt (Organic Karungali Selection Zone)", "Protected Traditional Reserve Estates (Premium Ebony Wood Source District)", "Aged Ebony Wood Conservation Sector (Monitored Selection Hub)", "Southern Peninsula Ebony Forest Reserves (Verified Sourcing Line)"];
-                    const analysisPool = ["Genuine Natural Ebony Wood Structure & Authentic Surface Density Confirmed", "Pure Karungali Ebony Core Wood Fiber & Natural Density Match Confirmed", "Authentic High-Density Plant Wood Material & Natural Grain Metrics Passed", "Organic Ebony Cellular Matrix & Undisturbed Wood Core Configuration Passed"];
-                    const remarksPool = ["Laboratory testing confirms the Karungali wood assembly is completely genuine and premium grade. The natural wood grain patterns show absolutely no signs of artificial coloring.", "Pristine organic wood structures verified under standard testing routines. The core fiber distribution is completely natural and dense, fully confirming a high-quality wood artifact.", "Complete organic profile match. The product shows structural continuity characteristic of premium, aged Karungali wood. Free from any artificial glues.", "Material density validation complete. Surface scans and weight checks show traditional natural parameters are fully met."];
+                    const sourcePool = [
+                        "Premium Southern Forest Belt (Monitored Organic Karungali Selection Zone)",
+                        "Protected Traditional Reserve Estates (Premium Ebony Wood Source District)",
+                        "Aged Ebony Wood Conservation Sector (Monitored Selection Hub)",
+                        "Southern Peninsula Ebony Forest Reserves (Verified Sourcing Line)"
+                    ];
+                    const analysisPool = [
+                        "Genuine Natural Ebony Wood Structure & Authentic Surface Density Confirmed",
+                        "Pure Karungali Ebony Core Wood Fiber & Natural Density Match Confirmed",
+                        "Authentic High-Density Plant Wood Material & Natural Grain Metrics Passed",
+                        "Organic Ebony Cellular Matrix & Undisturbed Wood Core Configuration Passed"
+                    ];
+                    const remarksPool = [
+                        "Laboratory testing confirms the Karungali wood assembly is completely genuine and premium grade. The natural wood grain patterns show absolutely no signs of artificial coloring.",
+                        "Pristine organic wood structures verified under standard testing routines. The core fiber distribution is completely natural and dense, fully confirming a high-quality wood artifact.",
+                        "Complete organic profile match. The product shows structural continuity characteristic of premium, aged Karungali wood. Free from any artificial glues.",
+                        "Material density validation complete. Surface scans and weight checks show traditional natural parameters are fully met."
+                    ];
                     sourceSelected = sourcePool[index]; analysisSelected = analysisPool[index]; remarksSelected = remarksPool[index];
                 }
 
                 insertionTargetCard.style.display = "block";
                 insertionTargetCard.innerHTML = `
                     <div class="secure-cert-layout">
-                        <div class="cert-header-meta"><span>Registry Node Sync</span><span>ID Match: ${upperToken}</span></div>
+                        <div class="cert-header-meta"><span>Official Status Documentation Node</span><span>Registry Sync: ${upperToken}</span></div>
                         <div class="cert-status-stripe"><span class="cert-stripe-icon">✓</span><div><h3 class="cert-stripe-title">THIS PRODUCT IS GENUINE</h3><p class="cert-stripe-subtitle">Index Code Verified</p></div></div>
                         <div class="cert-data-rows">
-                            <div class="data-matrix-row"><span class="matrix-lbl">Ledger Tracking Code:</span><span class="matrix-val">${upperToken}</span></div>
+                            <div class="data-matrix-row"><span class="matrix-lbl">Ledger Tracking Code:</span><span class="matrix-val" style="font-family: monospace;">${upperToken}</span></div>
                             <div class="data-matrix-row"><span class="matrix-lbl">Ledger Audit Status:</span><span class="matrix-val" style="color:var(--gold-primary); font-weight:bold;">${statusSelected}</span></div>
                             <div class="data-matrix-row"><span class="matrix-lbl">Geographic Sourcing Track:</span><span class="matrix-val">${sourceSelected}</span></div>
                             <div class="data-matrix-row"><span class="matrix-lbl">Structural Analysis:</span><span class="matrix-val">${analysisSelected}</span></div>
@@ -617,7 +852,7 @@
             routeSPAView('hidden-qr-result');
 
             if (idInt >= 1 && idInt <= 15000) {
-                // MODEL 1: THE RE-ENGINEERED RUDRAKSHA PARCHMENT RECORD CARD
+                // MODEL 1: THE WHITE PARCHMENT RUDRAKSHA MALA CARD
                 containerNode.innerHTML = `
                     <div class="hidden-qr-card-view">
                         <div class="v-card-top"><div><h2>Vedic Ratna Lab</h2><p>Authenticity Verification Certificate</p></div><div class="v-card-stamp-mark">VERIFIED</div></div>
@@ -637,19 +872,19 @@
                     </div>`;
             } 
             else if (idInt >= 15001 && idInt <= 20000) {
-                // MODEL 2: NEW WHITE PARCHMENT TULSI MALA RECORD CARD (Clean, zero mukhi counts mentioned anywhere)
+                // MODEL 2: UPDATED TULSI MALA VIEWPORT WITH EXPLICIT IMAGE CORRECTION
                 containerNode.innerHTML = `
                     <div class="hidden-qr-card-view">
                         <div class="v-card-top"><div><h2>Vedic Ratna Lab</h2><p>Authenticity Verification Certificate</p></div><div class="v-card-stamp-mark">VERIFIED</div></div>
                         <div class="v-card-split">
-                            <div class="v-card-img-holder"><img src="rudraksha-B8YEuaXI.jpg" alt="Sacred Wood"></div>
+                            <div class="v-card-img-holder"><img src="tulsi-mala.jpg" alt="Sacred Tulsi Mala Assembly Visual Record"></div>
                             <div>
                                 <table class="v-card-table">
                                     <tr><td class="lbl">Product Category:</td><td class="val">Sacred Tulsi Mala</td></tr>
                                     <tr><td class="lbl">Material Profile:</td><td class="val">Natural Holy Basil Wood Structure</td></tr>
                                     <tr><td class="lbl">Sourcing Track:</td><td class="val">Sacred Vrindavan Harvesting Node</td></tr>
                                     <tr><td class="lbl">Test Result:</td><td class="val" style="color:var(--success-green); font-weight:700;">AUTHENTIC / PASS</td></tr>
-                                    <tr><td class="lbl">Cellular Scan:</td><td class="val">Pure Basil Grain Matrix Passed</td></tr>
+                                    <tr><td class="lbl">Cellular Scan:</td><td class="val">Pure Basil Wood Grain Matrix Passed</td></tr>
                                 </table>
                             </div>
                         </div>
@@ -657,7 +892,7 @@
                     </div>`;
             } 
             else if (idInt >= 20001 && idInt <= 25000) {
-                // MODEL 3: THE RE-ENGINEERED KARUNGALI PARCHMENT RECORD CARD
+                // MODEL 3: THE WHITE PARCHMENT KARUNGALI MALA WOOD CARD
                 containerNode.innerHTML = `
                     <div class="hidden-qr-card-view">
                         <div class="v-card-top"><div><h2>Vedic Ratna Lab</h2><p>Authenticity Verification Certificate</p></div><div class="v-card-stamp-mark">VERIFIED</div></div>
